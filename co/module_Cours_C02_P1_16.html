@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Modélisation par équation différentielle [C02_P1 : Modélisation et analyse temporelle des SLCI]</title>
+		<meta charset="UTF-8" ></meta>
+		<meta name="generator" content="SCENARI 6.3.11 / OpaleExtEmeraude 24.1.0" ></meta>
+		<meta name="revision" content="2024-11-23 11:57" ></meta>
+		<link rel="start" href="module_Cours_C02_P1.html" title="C02_P1 : Modélisation et analyse temporelle des SLCI" ></link>
+		<meta name="author" content="S. Lemasle
+" ></meta>
+		<meta name="keywords" content="" ></meta>
+		<meta name="date" content="2025" ></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1" ></meta>
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css" ></link>
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_tePlayer/tePlayer.css" ></link>
+		<script>/*<![CDATA[*/
+/*0*/ var scServices = {id:"m3u47jfw"};
+/*1*/ window.scLoadParams = {destUri:"/co/module_Cours_C02_P1_16.html", pathToRoot:"../"};
+/*]]>*/</script>
+		<script src="../lib-sc/scCoLib.js" ></script>
+		<script src="../lib-sc/scSiLib.js" ></script>
+		<script src="../lib-sc/scTiLib.js" ></script>
+		<script src="../lib-sc/scPaLib.js" ></script>
+		<script src="../lib-md/s_assmnt.js" ></script>
+		<script src="../lib-sc/scMapMgr.js" ></script>
+		<script src="../lib-sc/scDynUiMgr.js" ></script>
+		<script src="../lib-sc/scTooltipMgr.js" ></script>
+		<script src="../lib-sc/scDragMgr.js" ></script>
+		<script src="../lib-sc/scAssmntMgr.js" ></script>
+		<script src="../lib-md/w_teMgr/teLoader.js" ></script>
+		<script src="../lib-md/w_tplMgr/tplMgr.js" ></script>
+		<script src="../lib-md/s_scSearch/jsSearch.js" ></script>
+		<script src="../lib-md/w_mathjax/mathjaxMgr.js" ></script>
+		<script src="../lib-md/w_tePlayer/tePlayer.js" ></script>
+		<script src="../lib-md/w_scCodeMgr/scCodeMgr.js" ></script>
+		<script src="../lib-md/w_searchMgr/searchMgr.js" ></script>
+		<script src="../lib-md/w_scImageMgr/scImageMgr.js" ></script>
+		<script src="../lib-md/w_outMgr/outMgr.js" ></script>
+		<script>/*<![CDATA[*/
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImageMgr.registerAdaptedImage("ide:content/des:figure.resInFlow/des:img");
+
+scImageMgr.registerGallery("des:div.galFra");
+
+scImageMgr.registerSequence("des:div.seqFra");
+
+scImageMgr.registerSvg("des:svg");
+scImageMgr.registerZoom("des:a.svgZoom",{type:"svg",svgMax:1,toolbar:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+scImageMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+tePlayerMgr.init();
+/*]]>*/</script>
+		<link rel="shortcut icon" type="image/png" href="../skin/img/favicon.png" ></link>
+		<meta name="robots" content="index,follow" ></meta>
+		<style ></style>
+		<link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all" ></link>
+		<link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all" ></link>
+		<link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print" ></link>
+		<script>/*<![CDATA[*/
+outMgr.declareOutline("outline.txt");
+	/*]]>*/</script>
+</head>
+	<body class="default module expUc">
+		<div id="root"><header id="header"><h1><span>C02_P1 : Modélisation et analyse temporelle des SLCI</span></h1><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>outils</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden" ></hr><section class="hBk article expUc"><h2 class="hBk_ti"><span>Modélisation par équation différentielle</span></h2><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>D'une manière générale, un système linéaire continu invariant peut être modélisé grâce aux lois de la physique par une équation différentielle, linéaire et <strong class="txt_emp_is ">à coefficients constants</strong> reliant la sortie s(t) à l'entrée e(t) de la forme :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[a_0.s(t) \, + \sum \limits_{k=1}^{n} a_k.\frac {d^ks(t)}{dt^k} \quad = \quad b_0.e(t)\, + \sum \limits_{k=1}^{m} b_k\frac {d^ke(t)}{dt^k}\]</span></div></figure></div><div class="rBk "><p>Dans un système <strong class="txt_emp_is ">causal</strong>, c'est-à-dire lorsque la cause précède l'effet (tout système physique) : <strong class="txt_emp_is "><span class="txt_mathtex_tl "><span>\(n \geq m\)</span></span></strong>. Ainsi le degré de dérivation le plus élevé sur la sortie correspond à l'ordre du système. On parle de <strong class="txt_emp_is ">système d'ordre n</strong>.</p><p>Deux modèles de systèmes fondamentaux sont couramment rencontrés et étudiés dans le cadre de la PTSI : les systèmes du <strong class="txt_emp_is ">premier ordre</strong> et les systèmes du <strong class="txt_emp_is ">second ordre</strong>.</p></div></div></div><section class="hBk expUcDiv"><h3 class="hBk_ti"><span>Cas d'un système du premier ordre</span></h3><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>La forme générale de l'équation différentielle caractéristique d'un système du premier ordre simple est :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\boxed{\, s(t) \, + \, \tau.\frac {ds(t)}{dt}\,= \,K.e(t) \,} \quad \text{ avec : } \left \{\begin{array}{l}  \tau \text{ : constante de temps du système } (\textit{en seconde })  \\ K \text{ : gain statique } \left( \textit{unité de K = } \frac { \textit{unité }  [s]} {\textit{unité }[e]} \right) \\ \end{array} \right .\]</span></div></figure></div></div></div><div class="example pBk"><h4 class="pBk_ti"><span><i class="type"><span class="label">Exemple</span></i><span class="hidden"> : </span><span class="title">Circuit R,C</span></span></h4><div class="pBk_co"><div class="rBk "><div class="txtRes "><div class="txt "><p>On considère le circuit électrique ci-contre. On cherche à connaître le comportement du système vis-à-vis de différents types de signaux.</p></div><div class="img rgt "><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><a href="../res/Circuit_RC.png" class="imgZoom" target="_blank" onclick="scImageMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fenêtre)"><img src="../res/Circuit_RC_1.png" width="300" height="179" alt="" ></img></a></div></figure></div></div></div><div class="rBk "><p>D'après la loi des mailles, on a : <span class="txt_mathtex_tl "><span>\(e(t ) = u_R(t )+ u_C(t )\)</span></span></p><p>Connaissant la relation de comportement aux bornes d'un condensateur : <span class="txt_mathtex_tl "><span>\(i (t ) = C\,\frac {d u_C(t)}{d t}\)</span></span> , et celle d'une résistance : <span class="txt_mathtex_tl "><span>\(u_R (t ) = R . i (t )\)</span></span>, on a donc :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[e(t ) = R.i(t)+ u_C(t )
+\quad \Longleftrightarrow \quad
+e(t ) = R.C\frac {d u_C(t)}{d t}+ u_C(t )\]</span></div></figure></div><div class="rBk "><p>On cherche donc à résoudre l'équation différentielle suivante :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[ u_C(t )+R.C\frac {d u_C(t)}{d t} = e(t)\]</span></div></figure></div><div class="rBk "><p>On détermine alors la constante de temps du système : <span class="txt_mathtex_tl "><span>\(\tau=R.C\)</span></span> et le gain statique : <span class="txt_mathtex_tl "><span>\(K =1\)</span></span>.</p></div></div></div></div></section><section class="hBk expUcDiv"><h3 class="hBk_ti"><span>Cas d'un système du second ordre</span></h3><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>La forme générale de l'équation différentielle caractéristique d'un système du second ordre simple est :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\boxed{\, s(t) \, + \, \frac{2.\xi}{\omega_0}\frac {ds(t)}{dt} + \,\, \frac{1}{\omega_0^2}\frac {d^2s(t)}{dt^2}= \,K.e(t) \,} \quad 
+\text{ avec : } 
+\left \{\begin{array}{l} 
+\omega_0\text{ : pulsation propre du système non amorti} \\
+\quad \quad \textit{ (en rad/s)}\\ 
+\xi\text{ : coefficient d'amortissement }\\
+\quad \quad (\xi&gt;0 \textit{ et sans unité)}\\
+K \text{ : gain statique}\left( \textit{unité de K = } \frac { \textit{unité } [s]} {\textit{unité }[e]} \right) 
+\\ \end{array} 
+\right .
+\]</span></div></figure></div></div></div><div class="example pBk"><h4 class="pBk_ti"><span><i class="type"><span class="label">Exemple</span></i><span class="hidden"> : </span><span class="title">Circuit R,L,C</span></span></h4><div class="pBk_co"><div class="rBk "><div class="txtRes "><div class="txt "><p>On considère le circuit électrique R,L,C ci-contre. On cherche à connaître le comportement du système vis à vis de différents types de signaux.</p></div><div class="img rgt "><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><a href="../res/Circuit_RLC.png" class="imgZoom" target="_blank" onclick="scImageMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fenêtre)"><img src="../res/Circuit_RLC_1.png" width="300" height="181" alt="" ></img></a></div></figure></div></div></div><div class="rBk "><p>D'après la loi des mailles, on a : <span class="txt_mathtex_tl "><span>\(e(t ) = u_R(t )+u_L(t)+ u_C(t )\)</span></span></p><p>Connaissant la relation de comportement aux bornes d'une bobine : <span class="txt_mathtex_tl "><span>\(u_L (t ) = L\,\frac {d i(t)}{d t}\)</span></span> , et celle d'une résistance : <span class="txt_mathtex_tl "><span>\(u_R (t ) = R . i (t )\)</span></span>, on a donc :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[e(t ) = R . i (t )+L\,\frac {d i(t)}{d t}+ u_C(t )\]</span></div></figure></div><div class="rBk "><p>En utilisant alors la relation de comportement aux bornes d'un condensateur : <span class="txt_mathtex_tl "><span>\(i (t ) = C\,\frac {d u_C(t)}{d t}\)</span></span> , on obtient l'équation différentielle suivante :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[u_C(t )+R . C\,\frac {d u_C(t)}{d t}+L.C\,\frac {d^2 u_C(t)}{d t^2} =e(t ) \]</span></div></figure></div><div class="rBk "><p>On détermine alors la pulsation propre du système non amorti <span class="txt_mathtex_tl "><span>\(\omega_0\)</span></span>, le coefficient d'amortissement <span class="txt_mathtex_tl "><span>\(\xi\)</span></span> et le gain statique <span class="txt_mathtex_tl "><span>\(K\)</span></span>.</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\left \{\begin{array}{l} \frac {2 \xi}{\omega_0}=R.C  \\ \frac 1 {\omega_0^2} = L.C \\ K=1 \\ \end{array} \right . \quad \Rightarrow \quad
+\left \{\begin{array}{l} \omega_0=\frac 1 {\sqrt{L.C}}  \\ \xi=\frac R 2 \sqrt{\frac C L}\\  K=1 \\ \end{array} \right .\]</span></div></figure></div></div></div></div></section></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden" ></hr><nav class="pageTurner" role="navigation"><ul><li class="pagePrev"><a rel="prev" target="_self" href="module_Cours_C02_P1_4.html" class="btnNav prev" title="Précédent (Outils de modélisation des SLCI)"><span>Précédent</span></a></li><li class="pageNext"><a rel="next" target="_self" href="module_Cours_C02_P1_17.html" class="btnNav next" title="Suivant (Démarche de résolution)"><span>Suivant</span></a></li></ul></nav></div></div><div id="toolbox"><nav aria-label="menu principal" class="pageSelector" id="menu" role="navigation" tabindex="-1"><hr class="hidden" ></hr><ul class="mnu static" data-totalPages="33"><li class="sel_no anc_no type_l  dpt_0 obj"><div class="lbl type_l" id="module_Cours_C02_P1_1.html"><a href="module_Cours_C02_P1_1.html" target="_self" class="item"><span>Objectifs</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C02_P1_2.html"><a href="module_Cours_C02_P1_2.html" target="_self" class="item"><span>Introduction à l'automatique</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C02_P1_3.html"><a href="module_Cours_C02_P1_3.html" target="_self" class="item"><span>Présentation des systèmes asservis</span></a></div></li><li class="sel_no anc_yes type_b  dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C02_P1_4.html"><a href="module_Cours_C02_P1_4.html" target="_self" class="item" type="up"><span>Outils de modélisation des SLCI</span></a></div><ul class="sub mnu_open"><li class="sel_yes anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C02_P1_16.html"><span class="item"><span>Modélisation par équation différentielle</span></span></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C02_P1_17.html"><a href="module_Cours_C02_P1_17.html" target="_self" class="item"><span>Démarche de résolution</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C02_P1_18.html"><a href="module_Cours_C02_P1_18.html" target="_self" class="item"><span>Transformée de Laplace</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C02_P1_19.html"><a href="module_Cours_C02_P1_19.html" target="_self" class="item"><span>Fonction de transfert (ou transmittance) d'un SLCI</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C02_P1_20.html"><a href="module_Cours_C02_P1_20.html" target="_self" class="item"><span>Transformée de Laplace inverse</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C02_P1_21.html"><a href="module_Cours_C02_P1_21.html" target="_self" class="item"><span>Recherche de la fonction de transfert par manipulation des schéma-blocs</span></a></div></li></ul></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C02_P1_5.html"><a href="module_Cours_C02_P1_5.html" target="_self" class="item"><span>Réponses temporelles des systèmes fondamentaux</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C02_P1_6.html"><a href="module_Cours_C02_P1_6.html" target="_self" class="item"><span>Identification temporelle d'un modèle de comportement</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C02_P1_7.html"><a href="module_Cours_C02_P1_7.html" target="_self" class="item"><span>ANNEXES</span></a></div></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden" ></hr><nav class="headingSelector" role="navigation"><ul class="mnu tools"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="module_Cours_C02_P1.html" target="_self" class="item" type="index" title="Page d&apos;accueil du module"><span>Accueil</span></a></div></li><li class="anc_yes module" data-position="ancestor"><div class="lbl"><span class="item"><span>Module</span></span></div></li></ul></nav></div></div></main><footer id="footer" tabindex="-1"><hr class="hidden" ></hr><a id="linkSp" target="_blank" href="https://doc.scenari.software/Opale" title="Réalisé avec SCENARI (nouvelle fenêtre)"><span><img alt="Réalisé avec Scenari (nouvelle fenêtre)" src="../skin/img/tpl/scBtn.png" ></img></span></a></footer></div>
+		<script src="../skin/js/skin.js" ></script>
+		<script>/*<![CDATA[*/
+/* 5 */ outMgr.init();
+/* 5 */ scCodeMgr.init();
+/* 5 */ scImageMgr.init();
+/* 0 */ tplMgr.init({accessBar:"none",themeMode:"none",addMenuBtn:false});
+/*]]>*/</script>
+		<script>/*<![CDATA[*/mathjaxMgr.init();/*]]>*/</script></body></html>
